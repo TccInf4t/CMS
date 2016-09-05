@@ -1,0 +1,224 @@
+/*FORMULARIOS TABELAS E DIV DE CADASTRO DAS INFORMAÇÕES*/
+
+#div-menu{
+	width: 200px;
+	height: auto;
+	border:none;
+	margin-top: 20px;
+	margin-left: 5px;
+	float: left;
+}
+
+
+.div-cadastro{
+	width: 650px;
+	height: auto;
+	border: solid 2px #a6a6a6;
+	float: left;
+	margin-left: 75px;
+	margin-top: 40px;
+}
+
+h1{
+	color:#5af;
+	text-align: center;
+	font-size: 26px;
+
+}
+
+h4{
+	clear: both;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 24px;
+	color:#5af;
+}
+
+label{
+	display: block;
+	margin-left: 20px;
+	font-size: 18px;
+	color:#1874cd;
+	margin-top: 20px;
+}
+
+input, select, textarea{
+    width: 96%;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #4d4d4d;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+textarea{
+	height: 130px;
+}
+
+.text-instittucional{
+	height: 60px;
+}
+
+.buttom{
+	width: 30%;
+	margin-left: 80px;
+	margin-top: 15px;
+	height: 45px;
+	float: left;
+	color: #fff;
+	outline: none;
+	border:none;
+	font-size: 20px;
+}
+
+.buttom:hover{
+	cursor: pointer;
+}
+
+#salvar{
+	background-color: #2eb82e;
+}
+
+#editar{
+	background-color:#f45 ;
+}
+
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top:10px;
+    float: left;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+    height: 30px;
+}
+
+th{
+	color: #808080;
+	font-size: 17px;
+	font-family: Arial;
+}
+
+td{
+	font-family: Arial;
+	color: #4d4d4d;
+	font-size: 16px;
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+
+
+
+/*ESTILIZAÇÃO TABS*/
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+ul.tab li {
+	float: left;
+}
+
+ul.tab li a {
+    display: inline-block;
+    color: #595959;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+
+}
+
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+ul.tab li a:focus, .active {
+    background-color: #ddd;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+    border-top: none;
+}
+
+/*ESTILIZAÇÃO ACORDION*/
+
+.text-ajuda{
+	line-height: 20px;
+	font-size: 17px;
+	color: #333;
+	text-align: justify;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+ 
+.accordion {
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+    background:#fff;
+    width: 75%;
+    float: left;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+ 
+.accordion-section-title {
+    width:100%;
+    padding:15px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    background-color:#404040;
+    transition:all linear 0.15s;
+    font-size:19px;
+    text-shadow:0px 1px 0px #1a1a1a;
+    color:#fff;
+}
+ 
+.accordion-section-title.active, .accordion-section-title:hover {
+    background:#595959;
+    text-decoration:none;
+}
+ 
+ 
+.accordion-section-content {
+  
+    display:none;
+}
+#div-registros{
+	width: 750px;
+	height: 500px;
+	overflow:auto;
+	float: left;
+	box-shadow:1px 1px 2px rgba(0,0,0,0.25);
+	border:solid 1px #ccc;
+	margin-left: 20px;
+	margin-top: 40px;
+}

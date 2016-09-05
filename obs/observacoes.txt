@@ -1,0 +1,23 @@
+Adm - Contato:
+  - Excluir
+  -Detalhes
+
+Adm - Dicas/Eventos/Parceiros
+  CRUD
+
+Adm - Home/Publicar Produtos/Imagens Slide/ Categorias
+  CRUD
+
+Adm - Lojas
+  CRUD
+
+Adm - Ofertas
+  CRUD
+
+Adm - Sobre/História da OnPeças/Missão Visão e Valores
+  CRUD
+
+Ajuda
+  Só HTML/CSS/JS(s/ programação)
+  
+

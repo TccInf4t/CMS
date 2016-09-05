@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de Lojas</title>
+	<link rel="stylesheet" type="text/css" href="style/style-padrao.css">
+	<link rel="stylesheet" type="text/css" href="style/style-conteudo.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="js/modal.js"></script>
+	<link rel="icon" href="img/favicon.png" type="image/gif">
+	<meta charset="utf-8">
+</head>
+<body>
+	<!-- div para cobrir o corpo efeito modal java script -->  
+	<div id="mascara">
+	</div>
+	<div id="faixa">
+	</div>
+	<div id="corpo">
+		<header>
+			<!--DIV DA JANELA MODAL EFEITO JAVA SCRIPT-->
+			<div class="window" id="janela">
+				<a href="#" class="fechar"><img src="img/close.png"></a>
+				<h2>Sair do CMS</h2>
+				<p class="text-sair">Tem certeza que você deseja sair do sistema?</p>
+					<form action="sair.php" name="" method="post">
+						<input type="submit" value="Sim" name="btnsair" class="btn-logoff" id="sim">
+						<a href="#" class="cancelar">
+						<input type="submit" value="Não" name="" class="btn-logoff" id="nao">
+						</a>
+					</form>
+			</div>
+			<!--FIM DA JANELA MODAL-->
+			<a href="#janela" rel="modal">
+				<div class="logoff">
+				<p class="text-logoff">Logoff</p>
+				</div>
+			</a>
+			<a href="index.php">
+				<div class="logoff">
+					<p class="text-logoff">Ir para o site</p>
+				</div>
+			</a>
+			<div id="logo">
+				<!--<img src="img/logo.png">
+			--></div>
+			<div id="div-info">
+				<p class="desc-info">Usuário:</p>
+				<span class="text-info">Lucas Augusto</span>
+				<p class="desc-info">Nível de usuário:</p>
+				<span class="text-info">Administrador Geral</span>
+			</div>	
+		</header>
+		<div id="conteudo">
+			<div id="div-menu">
+				<a href="contato.html">
+					<div class="item-menu">
+						<p class="text-menu">Adm - Contato</p>
+						<div class="icon-menu" id="icon-contato">	
+
+						</div>
+					</div>
+				</a>
+				<a href=".php">
+					<div class="item-menu">
+						<p class="text-menu">Adm - Info</p>
+						<div class="icon-menu" id="icon-dicas">	
+
+						</div>
+					</div>
+				</a>
+				<a href=".php">
+					<div class="item-menu">
+						<p class="text-menu">Adm - Home </p>
+						<div class="icon-menu" id="icon-home">	
+
+						</div>
+					</div>
+				</a>
+				<a href="loja.html">
+					<div class="item-menu">
+						<p class="text-menu">Adm - Lojas </p>
+						<div class="icon-menu" id="icon-loja">	
+
+						</div>
+					</div>
+				</a>
+				<a href=".php">
+					<div class="item-menu">
+						<p class="text-menu">Adm - Ofertas </p>
+						<div class="icon-menu" id="icon-promocao">	
+
+						</div>
+					</div>
+				</a>
+				<a href="sobre.html">
+					<div class="item-menu">
+						<p class="text-menu">Adm - Sobre </p>
+						<div class="icon-menu" id="icon-sobre">	
+
+						</div>
+					</div>
+				</a>
+				<a href="ajuda.html">
+					<div class="item-menu">
+						<p class="text-menu">Ajuda </p>
+						<div class="icon-menu" id="icon-ajuda">	
+
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="div-cadastro">
+				<h1>Cadastro de Lojas</h1>
+				<form name="" action="" method="">
+					<label>Nome da Loja:</label>
+						<input type="text" name="" placeholder="OnPeças Jd.Rosemeire">
+					<label>CEP:</label>
+						<input type="text" name="" placeholder="06657-015">
+					<label>Logradouro:</label>
+						<input type="text" name="" placeholder="Av. Aguinaldo Almeida">
+					<label>Cidade:</label>
+						<input type="text" name="" placeholder="Itapevi">
+					<label>Bairro:</label>
+						<input type="text" name="" placeholder="Jardim Rosemeire">	
+					<label>Nº:</label>
+						<input type="text" name="" placeholder="222">	
+					<label>Telefone:</label>
+						<input type="text" name="" placeholder="4578-8975">	
+					<input type="submit" name="" class="buttom" id="salvar" value="Salvar">
+					<input type="submit" name="" class="buttom" id="editar" value="Editar">
+				</form>
+			</div>
+			<h4>Tabela de Registros</h4>
+			<table>
+				<tr>
+					<th>
+						Loja
+					</th>
+					<th>
+						Cidade
+					</th>
+					<th>
+						Bairro
+					</th>
+					<th>
+						Detalhes
+					</th>
+					<th>
+						Editar
+					</th>
+					<th>
+						Excluir
+					</th>
+				</tr>
+				<tr>
+					<td>OnPeças Pq.Suburbano</td>
+					<td>Itapevi</td>
+					<td> Parque Suburbano</td>
+					<td><img src="img/icon-plus.png" alt="" title=""></td>
+					<td><img src="img/icon-edit.png" alt="" title=""></td>
+					<td><img src="img/icon-del.png" alt="" title=""></td>
+				</tr>
+				
+			</table>
+		</div>
+		<footer>
+			<h3>OnPeças ©</h3>
+			<h3>Desenvolvido por Code Solution  2016</h3>
+		</footer>
+	</div>
+</body>
+</html>
