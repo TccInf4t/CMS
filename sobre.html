@@ -20,7 +20,7 @@
 		<header>
 			<!--DIV DA JANELA MODAL EFEITO JAVA SCRIPT-->
 			<div class="window" id="janela">
-				<a href="#" class="fechar"><img src="img/close.png"></a>
+				<a href="#" class="fechar"><div id="close"></div></a>
 				<h2>Sair do CMS</h2>
 				<p class="text-sair">Tem certeza que você deseja sair do sistema?</p>
 					<form action="sair.php" name="" method="post">
@@ -42,8 +42,7 @@
 				</div>
 			</a>
 			<div id="logo">
-				<!--<img src="img/logo.png">
-			--></div>
+			</div>
 			<div id="div-info">
 				<p class="desc-info">Usuário:</p>
 				<span class="text-info">Lucas Augusto</span>
@@ -52,7 +51,7 @@
 			</div>	
 		</header>
 		<div id="conteudo">
-			<div id="div-menu">
+<div id="div-menu">
 				<a href="contato.html">
 					<div class="item-menu">
 						<p class="text-menu">Adm - Contato</p>
@@ -61,15 +60,23 @@
 						</div>
 					</div>
 				</a>
-				<a href=".php">
+				<a href="dica.html">
 					<div class="item-menu">
-						<p class="text-menu">Adm - Info</p>
+						<p class="text-menu">Adm - Dicas</p>
 						<div class="icon-menu" id="icon-dicas">	
 
 						</div>
 					</div>
 				</a>
-				<a href=".php">
+				<a href="evento.html">
+					<div class="item-menu">
+						<p class="text-menu">Adm - Eventos</p>
+						<div class="icon-menu" id="icon-eventos">	
+
+						</div>
+					</div>
+				</a>
+				<a href="home.html">
 					<div class="item-menu">
 						<p class="text-menu">Adm - Home </p>
 						<div class="icon-menu" id="icon-home">	
@@ -85,10 +92,10 @@
 						</div>
 					</div>
 				</a>
-				<a href=".php">
+				<a href="parceiro.html">
 					<div class="item-menu">
-						<p class="text-menu">Adm - Ofertas </p>
-						<div class="icon-menu" id="icon-promocao">	
+						<p class="text-menu">Adm - Parceiros </p>
+						<div class="icon-menu" id="icon-parceiro">	
 
 						</div>
 					</div>
@@ -138,8 +145,6 @@
 
 					<div id="2" class="tabcontent">
 					  	<form name="" action="" method="">
-						<label>Titulo:</label>
-							<input type="text" name="" placeholder="Missão Visão e Valores">
 						<label>Missão:</label>
 						<input type="text" name="">
 						<label>Visão:</label>
@@ -150,6 +155,44 @@
 						<input type="submit" name="" class="buttom" id="editar" value="Editar">
 						</form>
 					</div>
+				</div>
+				<div class="text-institucional">
+					<a href="#">
+						<div class="opcao" id="text-edit"></div>
+					</a>
+						<h6>Nossa História</h6>
+							<p class="text">
+								A história da Chibana Autopeças, começa em 1990, na antiga e extinta Autopeças Mauá, instalada na Av. Conselheiro Carrão, numa área de 200m². Sempre com muito trabalho e dedicação dando uma atenção especial no atendimento, ganhou confiança dos clientes e credibilidade no mercado.
+								Graças a esse esforço, em novembro de 1995, instalou-se em sua sede própria com amplo estacionamento em uma área de 2500m². Espaço maior para oferecer comodidade e conforto com o intuito de melhorar a qualidade e seus serviços.
+								Em 2007 ampliou sua área com o mercado de acessórios aumentando assim as opções para o cliente.
+								Buscando sempre estar atualizada no mercado de reposição conta com uma grande variedade de produtos, uma equipe qualificada de vendas, serviços de entrega e parcelamentos com cartões de crédito.
+								A Família Chibana agradece aos clientes, fornecedores e amigos pela parceria e apoio em toda sua trajetória e ao bairro Vila Carrão que tão bem a acolheu.
+							</p>
+						<h6>Onpeças desde 1999 prestando os melhores serviços </h6>
+							<p class="text">
+								Disponibiliza para seus clientes uma área de serviços de instalação de som e acessórios a preços imbatíveis, com uma equipe de profissionais altamente capacitados à instalar os produtos adquiridos em uma de suas lojas, além de um treinamento básico a respeito da operação e conservação dos acessórios instalados.
+								Possui um sistema delivery que atende toda a região Oeste da Grande São Paulo e algumas cidades do Interior. Consulte um de nossos atendentes.
+							</p>
+				</div>
+
+				<div class="text-institucional">
+					<a href="#">
+						<div class="opcao" id="text2-edit"></div>
+					</a>
+						<h6>Missão</h6>
+							<p class="text">
+								Fornecer os melhroes serviços aos nosso cliente.
+							</p>
+
+						<h6>Visão </h6>
+							<p class="text">
+								Tornar-se a maior empresa de vendas online de peças usadas e siminovas da Ameréca Latina.
+							</p>
+
+						<h6>Valores </h6>
+							<p class="text">
+								CHA- Competência, Habilidade e Atitude.
+							</p>
 				</div>
 			</div>
 		<footer>

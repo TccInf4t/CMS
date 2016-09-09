@@ -23,7 +23,7 @@ h1{
 	color:#5af;
 	text-align: center;
 	font-size: 26px;
-
+	clear: both;
 }
 
 h4{
@@ -213,12 +213,113 @@ ul.tab li a:focus, .active {
     display:none;
 }
 #div-registros{
-	width: 750px;
-	height: 500px;
+	width: 770px;
+	height: 550px;
 	overflow:auto;
 	float: left;
 	box-shadow:1px 1px 2px rgba(0,0,0,0.25);
 	border:solid 1px #ccc;
-	margin-left: 20px;
+	margin-left: 10px;
 	margin-top: 40px;
+}
+
+#preview{
+		width: 980px;
+		height: 400px;
+		border:solid 1px #ccc;
+		margin-top: 40px;
+		margin-left: 8px;
+		text-align: center;
+}
+
+.img-cadastradas{
+	float: left;
+	width: 980px;
+	height: 400px;
+	border-top:solid 2px #666;
+	margin-top: 10px;
+	margin-left: 8px;
+}
+
+.opcao{
+	float: right;
+	width: 20px;
+	height: 20px;
+	border:solid 1px #ccc;
+	margin-right: 8px;
+	margin-top: 5px;
+	
+}
+
+#img-del{
+background-image: url(../img/icon-del.png);
+}
+
+#img-edit{
+background-image: url(../img/icon-edit.png);
+}
+
+#text-edit{
+background-image: url(../img/icon-edit.png);
+}
+
+#text2-edit{
+background-image: url(../img/icon-edit.png);
+}
+
+.text-institucional{
+	float: left;
+	width: 980px;
+	height: auto;
+	border-top:solid 2px #666;
+	margin-top: 30px;
+	margin-left: 8px;
+	margin-bottom: 20px;
+}
+
+
+.text{
+	line-height: 30px;
+	color:#000;
+	font-family: Arial;
+	font-size: 17px;
+	text-align: justify;
+	margin-left: 10px;
+	margin-right: 10px;
+	clear: both;
+}
+
+
+h6{
+	margin-bottom: 0px;
+	margin-top: 15px;
+	margin-left: 15px;
+	color:#5af;
+	font-size: 19px;
+}
+
+.data{
+	font-size: 13px;
+	color: #f45;
+	font-weight: bold;
+	text-decoration: underline;
+	margin-left: 20px;
+}
+
+.calendario{
+	float: left;
+	width: 48px;
+	height: 48px;
+	background-image: url(../img/calendario.png);
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.data-evento{
+	color: #808080;
+	font-size: 22px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 34px;
 }
