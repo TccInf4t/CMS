@@ -82,8 +82,8 @@ header{
 	margin-top:15px;
 	float: left;
 	display: block;
-	/*background-image: url(../img/logo.png);
-	*/background-size: 100%;
+	background-image: url(../img/logo.png);
+	background-size: 100%;
 	background-color:#fff;
 	border-radius:5px;
 }

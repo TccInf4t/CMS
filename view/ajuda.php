@@ -3,8 +3,8 @@
 <head>
 	<title>Ajuda ?</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style/style-padrao.css">
-	<link rel="stylesheet" type="text/css" href="style/style-conteudo.css">
+	<link rel="stylesheet" type="text/css" href="../style/style-padrao.css">
+	<link rel="stylesheet" type="text/css" href="../style/style-conteudo.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script> 
 	<script type="text/javascript" src="js/modal.js"></script>
 	<script type="text/javascript" src="js/acordion.js"></script>
@@ -52,72 +52,9 @@
 			</div>	
 		</header>
 		<div id="conteudo">
-			<div id="div-menu">
-				<a href="contato.html">
-					<div class="item-menu">
-						<p class="text-menu">Adm - Contato</p>
-						<div class="icon-menu" id="icon-contato">	
-
-						</div>
-					</div>
-				</a>
-				<a href="dica.html">
-					<div class="item-menu">
-						<p class="text-menu">Adm - Dicas</p>
-						<div class="icon-menu" id="icon-dicas">	
-
-						</div>
-					</div>
-				</a>
-				<a href="evento.html">
-					<div class="item-menu">
-						<p class="text-menu">Adm - Eventos</p>
-						<div class="icon-menu" id="icon-eventos">	
-
-						</div>
-					</div>
-				</a>
-				<a href="home.html">
-					<div class="item-menu">
-						<p class="text-menu">Adm - Home </p>
-						<div class="icon-menu" id="icon-home">	
-
-						</div>
-					</div>
-				</a>
-				<a href="loja.html">
-					<div class="item-menu">
-						<p class="text-menu">Adm - Lojas </p>
-						<div class="icon-menu" id="icon-loja">	
-
-						</div>
-					</div>
-				</a>
-				<a href="parceiro.html">
-					<div class="item-menu">
-						<p class="text-menu">Adm - Parceiros </p>
-						<div class="icon-menu" id="icon-parceiro">	
-
-						</div>
-					</div>
-				</a>
-				<a href="sobre.html">
-					<div class="item-menu">
-						<p class="text-menu">Adm - Sobre </p>
-						<div class="icon-menu" id="icon-sobre">	
-
-						</div>
-					</div>
-				</a>
-				<a href="ajuda.html">
-					<div class="item-menu">
-						<p class="text-menu">Ajuda </p>
-						<div class="icon-menu" id="icon-ajuda">	
-
-						</div>
-					</div>
-				</a>
-			</div>
+			<?php 
+				require_once('menu.php');
+			 ?>
 			 	<div class="accordion">
 				    <div class="accordion-section">
 				        <a class="accordion-section-title" href="#accordion-1">
