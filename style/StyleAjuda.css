@@ -1,0 +1,103 @@
+/* ARQUIVO DE ESTILIZAÇÃO DA PAGINA AJUDA DO CMS*/
+
+
+/**************************ESTILIZAÇÃO ACORDION**********************/
+
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+ 
+.accordion {
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+    border:none;
+    background:#fff;
+    width: 70%;
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+ 
+.accordion-section-title {
+    width:100%;
+    padding:10px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    background:#595959;
+    font-size:19px;
+    color:#fff;
+}
+ 
+.accordion-section-title.active, .accordion-section-title:hover {
+    background:#595959;
+    text-decoration:none;
+}
+ 
+ 
+.accordion-section-content {
+    text-align: justify;
+    display:none;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.obrigatorio{
+    color:red;
+    float: left;
+    margin-top: 8px;
+    margin-left: 5px;
+    font-size: 35px;
+}
+
+.inputAjuda{
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.imgAjuda{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.iconesAjuda{
+    display: block;
+    margin-bottom: 10px;
+}   
+
+.textI{
+    float: left;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top:10px;
+    /*float: left;
+*/}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+    height: 30px;
+}
+
+th{
+    color: #808080;
+    font-size: 17px;
+    font-family: Arial;
+}
+
+td{
+    font-family: Arial;
+    color: #4d4d4d;
+    font-size: 16px;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,478 @@
+/*ESTILIZAÇÃO DO CONTEUDO DO CMS(FORMULARIOS, TABELAS E TITULOS PRATICAMENTE PADRONIZADOS)*/
+
+
+
+
+.caixaCadastro{
+	width: 650px;height: auto;
+	border: solid 1px #a6a6a6;
+	float: left;
+	margin-left: 50px;margin-top: 30px;margin-bottom: 50px;
+	display: block;
+}
+
+.caixaRegistrosParceiro{
+	width: 95%;height: auto;
+	float: left;
+	border-top:solid 2px #666;
+	margin-left: 20px;margin-top: 20px;margin-bottom: 15px;
+}
+
+
+#caixaRegistrosContato{
+	width: 700px;
+	height: 500px;
+	overflow:auto;
+	float: left;
+	display: block;
+	box-shadow:1px 1px 2px rgba(0,0,0,0.25);
+	border:solid 1px #ccc;
+	margin-top: 30px;margin-bottom: 50px;margin-left: 20px;
+}
+
+.caixaFiltroRegistro{
+	width: 220px;height: auto;
+	border: solid 1px #a6a6a6;
+	display: block;
+	float: left;
+}
+
+/**************************TITULOS**************************/
+
+h4{
+	color:#5af;
+	text-align: center;
+	font-size: 24px;
+	clear: both;
+	margin: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h5{
+	color:#5af;
+	text-align: center;
+	font-size: 24px;
+	clear: both;
+	margin: 0px;
+	margin-top: 20px;
+	margin-bottom:15px;
+}
+
+h6{
+	margin-bottom: 0px;
+	margin-top: 15px;
+	margin-left: 15px;
+	color:#5af;
+	font-size: 19px;
+}
+
+#tituloImg{
+	clear: both;
+	color:#5af;
+	text-align: center;
+	font-size: 24px;
+	display: block;
+	margin: 0px;
+}
+
+
+
+/**************************FORMULÁRIOS*******************************/
+
+label{
+	display: block;
+	margin-left: 20px;
+	font-size: 18px;
+	color:#1874cd;
+	margin-top: 20px;
+}
+
+input, select, textarea{
+    width: 96%;
+    padding: 12px 15px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #4d4d4d;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+textarea{
+	height: 130px;
+	resize: none;
+	line-height: 25px;
+}
+
+.buttom{
+	width: 30%;height: 45px;
+	margin: 0 auto;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display: block;
+	color: #fff;background-color: #2eb82e;
+	outline: none;border:none;
+	line-height: 18px;
+}
+
+.buttom:hover{
+	cursor: pointer;
+}
+
+
+/**************************TABELA DE REGISTROS*******************************/
+
+
+.caixaRegistros{
+	width: 95%;height: auto;
+	float: left;
+	border-top:solid 2px #666;
+	margin-left: 20px;margin-top: 20px;margin-bottom: 15px;
+}
+
+.opcao{
+	float: right;
+	width: 20px;
+	height: 20px;
+	border:solid 1px #ccc;
+	margin-right: 10px;
+	margin-top: 5px;
+	
+}
+
+.opcao:hover{
+	background-color: #ccc;
+}
+
+#iconEditar{
+	background-image: url(../icon/iconEditar.png);
+}
+
+#iconDeletar{
+	background-image: url(../icon/iconDeletar.png);
+}
+
+.text{
+	line-height: 30px;
+	color:#000;
+	font-family: Arial;
+	font-size: 17px;
+	text-align: justify;
+	margin-left: 10px;
+	margin-right: 10px;
+	clear: both;
+}
+
+.data{
+	font-size: 15px;
+	color: #4d4d4d;
+	font-weight: bold;
+	text-decoration: underline;
+	font-style: italic;
+	
+}
+
+.textData{
+	font-size: 15px;
+	margin-left: 20px;
+	color: #4d4d4d;
+	font-style: italic;
+}
+
+.dataEvento{
+	color: #808080;
+	font-size: 22px;
+	float: left;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top: 34px;
+}
+
+
+.calendario{
+	float: left;
+	width: 48px;
+	height: 48px;
+	background-image: url(../img/calendario.png);
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+
+#preview{
+		width: 95%;
+		height: 400px;
+		margin: 0 auto;
+		display: block;
+}
+
+#previewparceiro{
+		width: 95%;
+		height: 400px;
+		border:solid 1px #ccc;
+		margin-top: 40px;
+		margin-bottom: 20px;
+		margin-left: 20px;
+}
+
+#previewLogo{
+	margin: 0 auto;
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	width: 200px;
+	height: 200px;
+	border:none;
+}
+
+.imgCadastradas{
+	float: left;
+	width: 95%;
+	height: 400px;
+	border-top:solid 2px #666;
+	margin-top: 10px;
+	margin-left: 20px;	
+}
+
+.parceiro{
+	margin-left: 15px;
+	color:#1874cd;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top:10px;
+    /*float: left;
+*/}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+    height: 30px;
+}
+
+th{
+	color: #808080;
+	font-size: 17px;
+	font-family: Arial;
+}
+
+td{
+	font-family: Arial;
+	color: #4d4d4d;
+	font-size: 16px;
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+.opcoesRegistro{
+	width: 20px;height: 20px;border:none;
+	margin: 0 auto;
+	background-position: center;
+}
+
+.opcoesRegistroLoja{
+	width: 20px;height: 20px;border:none;
+	margin: 0 auto;
+	background-position: center;
+	float:left;
+}
+
+#tabelaDetalhes{
+	background-image: url(../icon/iconDetalhes.png);
+}
+#tabelaEditar{
+	background-image: url(../icon/iconEditar.png);
+}
+#tabelaDeletar{
+	background-image: url(../icon/iconDeletar.png);
+}
+
+
+
+/**************************TABLE*******************************/
+
+
+
+/**************************TABS*******************************/
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+ul.tab li {
+	float: left;
+}
+
+ul.tab li a {
+    display: inline-block;
+    color: #595959;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+
+}
+
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+ul.tab li a:focus, .active {
+    background-color: #ddd;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+    border-top: none;
+}
+
+/**************************ESTILIZAÇÃO ACORDION**********************/
+
+.textAjuda{
+	line-height: 20px;
+	font-size: 17px;
+	color: #333;
+	text-align: justify;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+ 
+.accordion {
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+    background:#fff;
+    width: 90%;
+    float: left;
+    margin-left: 39px;
+    margin-top: 1px;
+}
+
+
+.accordion-section-title {
+    width:100%;
+    padding:15px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    background-color:#404040;
+    transition:all linear 0.15s;
+    font-size:19px;
+    text-shadow:0px 1px 0px #1a1a1a;
+    color:#fff;
+}
+
+.accordionLoja{
+
+    border-radius:3px;
+    background:#fff;
+    width: 90%;
+    float: left;
+    margin-left: 20px;
+    margin-top: 40px;
+
+}
+
+.accordion-section-title-loja {
+    width:100%;
+    padding:5px;
+    display:inline-block;
+    /*border-bottom:1px solid #1a1a1a;*/
+    background-color:#f2f2f2;
+    transition:all linear 0.15s;
+    font-size:19px;
+    color:#6E6E6E;
+}
+
+.accordion-section-title-loja:hover {
+
+	opacity: 0.7;
+    filter: alpha(opacity=70);
+
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+    background:#595959;
+    text-decoration:none;
+}
+ 
+ 
+.accordion-section-content {
+  
+    display:none;
+}
+
+
+/************************ESTILO MODAL DETALÇHES DO CONTATO***********************/
+
+
+#fecharDetalhes{
+	background-image: url(../img/fecharDetalhes.png);
+	width: 30px;
+	height: 30px;
+	display:block; 
+	border:none;
+	float: right;
+}
+
+
+#janelaDetalhes{
+	display:none;
+    width:800px;height:auto;
+    position:absolute;
+    left:0;top:0;
+    background:#fff;
+    padding:10px;
+
+}
+
+.textDetalhes{
+	color:#555;
+	font-size: 17px;
+	margin-left: 25px;margin-bottom: 0px;margin-top: 0px;
+	text-align: justify;
+}
+
+.imgCadastradas{
+	float: left;
+	width: 95%;
+	height: 400px;
+	border-top:solid 2px #666;
+	margin-top: 10px;
+	margin-left: 20px;	
+}
+
+.imgCadastradas img{
+	width: 100%;
+	height: 320px;
+}
+
+#previwParceiro{
+	margin-top: 15px;
+	width: 100%;
+	height: 320px;
+}

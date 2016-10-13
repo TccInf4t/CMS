@@ -1,0 +1,19 @@
+<?php
+	require_once("../bd/conexao.php");
+	
+	Conectar();
+	
+	$id = $_GET['id_contato'];
+	
+	$query = "select * from contato where oid_contato = ". $id .";";
+	$exec = mysqli_query($query);
+	
+	$lista = array();
+	
+	while($rs = mysql_fetch_array($exec)){
+		$lista[] = $rs;
+	}
+	
+	$json = json_encode($lista);
+	echo($json);
+?>
