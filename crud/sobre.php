@@ -19,7 +19,7 @@
 
 		}else{
 
-		$sql="insert into conteudosite (descricao, classname, missao, visao, valores) values ('".$descricao."', 'tSobre', '".$missao."', '".$visao."', '".$valores."');";
+		$sql="insert into conteudosite (descricao, classname, missao, visao, valores) values ('".$descricao."', 'TSobre', '".$missao."', '".$visao."', '".$valores."');";
 
 		mysql_query($sql);
 		header("Location: sobre.php");

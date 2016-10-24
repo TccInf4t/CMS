@@ -1,14 +1,16 @@
 <?php 
 		function Conectar(){
 
-			$servidor="10.107.144.52";
-			$usuario="root";
-			$senha="bcd127";
+			$servidor="localhost";
+			$usuario="csop";
+			$senha="csoptcc@2016";
 
 			if($conexao=mysql_connect($servidor, $usuario, 
 				$senha)){
 
-				mysql_select_db("csoptcc");
+				mysql_select_db("dbcsop");
+
+				mysql_set_charset('utf8',$conexao);
 
 			}else{
 				echo("ERRO na conexão com o banco de dados".mysql_error());

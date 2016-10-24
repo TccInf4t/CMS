@@ -10,7 +10,7 @@
 
 		if(mysql_num_rows($select) == 0){
 
-			$sql="insert into rodape(nome,cnpj,telefone,email,oid_loja,facebook,twitter) values('".$_POST['txtNome']."','".$_POST['txtCnpj']."','".$_POST['txtTelefone']."','".$_POST['txtEmail']."',".$_POST['cbLoja'].",'".$_POST['txtFacebook']."','".$_POST['txtTwitter']."');";
+			$sql="insert into rodape(nome,cnpj,telefone,email,oid_loja,facebook,googleplus,twitter,linkedin) values('".$_POST['txtNome']."','".$_POST['txtCnpj']."','".$_POST['txtTelefone']."','".$_POST['txtEmail']."',".$_POST['cbLoja'].",'".$_POST['txtFacebook']."','".$_POST['txtTwitter']."');";
 			mysql_query($sql);
 
 

@@ -73,13 +73,13 @@
 			<div class="caixaCadastro">
 				<h1>Cadastro de Lojas</h1>
 				<form name=" " action="" method="post">
-					<label>Nome da Loja:</label>
+					<label>Nome da Loja:<span class="obrigatorio">*</span></label>
 						<input type="text" name="txtNome" placeholder="OnPeças Jd.Rosemeire"  required value="<?php echo($nome); ?>">
-					<label>CEP:</label>
+					<label>CEP:<span class="obrigatorio">*</span></label>
 						<input type="text" id="cep" name="txtCep" placeholder="06657-015" minlength="9" maxlength="9" required value="<?php echo($cep); ?>">
-					<label>Logradouro:</label>
+					<label>Logradouro:<span class="obrigatorio">*</span></label>
 						<input type="text" name="txtLogradouro" placeholder="Av. Aguinaldo Almeida" required value="<?php echo($logradouro); ?>">
-					<label>Estado:</label>
+					<label>Estado:<span class="obrigatorio">*</span></label>
 						<?php
 							
 							$sql="select * from estado";
@@ -103,16 +103,16 @@
 							?>
 
 						</select>
-					<label>Cidade:</label>
+					<label>Cidade:<span class="obrigatorio">*</span></label>
 						<select name="cbCidade" id="cbCidade" required>
 						</select>
-					<label>Bairro:</label>
+					<label>Bairro:<span class="obrigatorio">*</span></label>
 						<input type="text" name="txtBairro" placeholder="Jardim Rosemeire" required value="<?php echo($bairro); ?>">	
-					<label>Nº:</label>
+					<label>Nº:<span class="obrigatorio">*</span></label>
 						<input type="text" name="txtNumero" placeholder="222" required value="<?php echo($numero); ?>">	
-					<label>Complemento:</label>
+					<label>Complemento:<span class="obrigatorio">*</span></label>
 						<input type="text" name="txtComplemento" placeholder="0A"  value="<?php echo($complemento); ?>">	
-					<label>Telefone:</label>
+					<label>Telefone:<span class="obrigatorio">*</span></label>
 						<input type="text" id="telefone" name="txtTelefone" minlength="13" placeholder="(00) 4578-8975" required value="<?php echo($telefone); ?>">	
 
 					<input type="submit" name="<?php echo($buttonName); ?>" class="buttom" id="salvar" value="Salvar"  value="<?php echo($telefone); ?>">

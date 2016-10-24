@@ -1,4 +1,5 @@
 <?php
+	require_once('function/corAleatoria.php');
 	require_once('bd/conexao.php');
 	Conectar();
 	
@@ -49,55 +50,91 @@
 		</header>
 		<div id="conteudo">
 			<?php require_once('standard/menu.php'); ?>
-	<!--DIV DA JANELA MODAL DETALHES EFEITO JAVA SCRIPT-->
-	
-	<div class="window" id="janelaDetalhes">
-		<a href="#" class="fechar">
-			<div id="fecharDetalhes"></div>
-		</a>
-			<h5>Detalhes do Registro</h5>
-			<label>Nome:</label>
-			<span class="textDetalhes" id="nomeJs"></span>
-			<label>Email:</label>
-			<span class="textDetalhes" id="emailJs"></span>
-			<label>Telefone:</label>
-			<span class="textDetalhes" id="telJs"></span>
-			<label>Motivo:</label>
-			<span class="textDetalhes" id="motivoJs"></span>
-			<label>Data e hora de envio:</label>
-			<span class="textDetalhes" id="dhJs"></span>
-			<label>Comentário:</label>
-			<p class="textDetalhes" id="comentarioJs"></p>
+			<!--DIV DA JANELA MODAL DETALHES EFEITO JAVA SCRIPT-->
 			
-			<a href="contato.php" id="apagar">
-				<div class="opcao" id="iconDeletar"></div>
-			</a>
-	</div>
+			<div class="window" id="janelaDetalhes">
+				<a href="#" class="fechar">
+					<div id="fecharDetalhes"></div>
+				</a>
+					<h5>Detalhes do Registro</h5>
+					<label>Nome:</label>
+					<span class="textDetalhes" id="nomeJs"></span>
+					<label>Email:</label>
+					<span class="textDetalhes" id="emailJs"></span>
+					<label>Telefone:</label>
+					<span class="textDetalhes" id="telJs"></span>
+					<label>Motivo:</label>
+					<span class="textDetalhes" id="motivoJs"></span>
+					<label>Data e hora de envio:</label>
+					<span class="textDetalhes" id="dhJs"></span>
+					<label>Comentário:</label>
+					<p class="textDetalhes" id="comentarioJs"></p>
+					
+					<a href="contato.php" id="apagar">
+						<div class="opcao" id="iconDeletar"></div>
+					</a>
+			</div>
+			<h2>Registros de Contato do Site</h2>
+			<div id="caixaRegistrosContato">
+				<table id="tblcontatos">
+					<tr>
+						<th>
+							<?php 
+								require_once('crud/selectMotivos.php');
+							?>
+						</th>
+						<th>
+							Nome:
+						</th>
+						<th>
+							Detalhes:
+						</th>
+						<th>
+							Excluir:
+						</th>
+					</tr>
+					<?php
+						require_once('lista_contatos.php');
+					?>
+				</table>
+			</div>
 
-<h2>Registros de Contato do Site</h2>
-<div id="caixaRegistrosContato">
-	<table id="tblcontatos">
-		<tr>
-			<th>
-				<?php 
-					require_once('crud/selectMotivos.php');
-				?>
-			</th>
-			<th>
-				Nome:
-			</th>
-			<th>
-				Detalhes:
-			</th>
-			<th>
-				Excluir:
-			</th>
-		</tr>
-		<?php
-			require_once('lista_contatos.php');
-		?>
-	</table>
-</div>
+			<h5>Relatório de Satisfação dos Clientes</h5>
+				<div class="caixaRelatorio">
+					<?php 
+						$sql="select * from motivocontato;";
+						$resultado=mysql_query($sql);
+
+				
+						while ($rs=mysql_fetch_array($resultado)) {
+						
+							//somando a quantidade geral dos motivos
+							$select="select  sum(qntd) as total FROM motivocontato;";
+							$query=mysql_query($select);
+							$result=mysql_fetch_array($query);
+							
+							if($rs["qntd"] != 0){
+
+								//DIVISÃO DA SOMA DE TODOS OS ACESSOS DOS MOTIVOS
+								$dvisaoTotalMotivos=$result["total"]/100;
+
+								//DIVISAO DE CADA MOTIVO INDIVIDUAL
+								$divisaoMotivo=$rs["qntd"]/$dvisaoTotalMotivos;
+
+							}else{
+										
+								$divisaoMotivo=0;
+							}
+							
+							echo('<div class="barraRelatorio" style=" width:'.$divisaoMotivo.'%; background-color: '.corAleatoria().';" ></div>');
+							
+							echo('<span class="porcentagemGrafico">'.number_format($divisaoMotivo, 1, ',', ' ')."%</span>");
+
+							echo("  -  ".$rs['nome']);
+
+						}
+					?>
+				</div>
 		</div>
 		<footer>
 			<h2>OnPeças ©</h2>

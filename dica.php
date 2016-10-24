@@ -52,9 +52,9 @@
 			<div class="caixaCadastro">
 				<h4>Cadastro de Dicas</h4>
 				 	<form name="formularioDica" action="#" method="post">
-						<label>Titulo:</label>
-						<input type="text" name="txtTitulo" placeholder="Nossas Dicas" required="required" value="<?php echo($titulo);?>">
-						<label>Descrição:</label>
+						<label>Título:<span class="obrigatorio">*</span></label> 
+						<input type="text" name="txtTitulo" placeholder="Ex: Nossas Dicas" required="required" value="<?php echo($titulo);?>">
+						<label>Descrição:<span class="obrigatorio">*</span></label>
 						<textarea name="txtDescricao" required="required"><?php echo($descricao);?></textarea> 
 						<input type="submit" name="btnSalvar" class="buttom" id="salvar" value="<?php echo($botao);?>">
 						
@@ -62,7 +62,7 @@
 			</div>
 				<h5>Tabela de Registros - Dicas</h5>
 					<?php 
-						$sql="SELECT * FROM visualizacaoDica;";
+						$sql="SELECT * FROM conteudosite where classname='TDica';";
 						$select=mysql_query($sql);
 						$cont=0;
 
@@ -77,7 +77,7 @@
 								<div class="opcao" id="iconEditar"></div>
 							</a>
 							<h6><?php echo($rs["titulo"])?> </h6>
-							<p class="text"><?php echo(nl2br($rs["descricao"]));?> </p>
+							<p class="text"><?php echo($rs["descricao"])?> </p>
 							<span class="textData">Data de publicação:</span>
 							<span class="data"><?php echo($rs["datacriacao"])?> </span>
 						</div>

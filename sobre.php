@@ -65,17 +65,13 @@
 							<input type="text" name="txtVisao" value="<?php echo ($visao);?>">
 						<label>Valores:</label>
 							<input type="text" name="txtValores" value="<?php echo ($valores);?>">
-							<input type="submit" name="btnSalvar" class="buttom" id="salvar" value="<?php echo($botao); ?>">
+							<input type="submit" name="btnSalvar" class="buttom" id="salvar" value="<?php echo($botao); ?>"<?php if(!isset($_GET['editar'])){ echo("disabled"); } ?>>
 					</form>
 				</div>
 					<?php 
-
-						$sql="select * from conteudosite where classname='tSobre'; ";
+						$sql="select * from conteudosite where classname='TSobre'; ";
 						$select=mysql_query($sql);
-						$cont=0;
-
-							while ($rs=mysql_fetch_array($select)) {
-							$cont++;	
+						$rs=mysql_fetch_array($select); 
 					 ?>
 						<div class="caixaRegistros">
 							<a href="sobre.php?editar=<?php echo($rs["oid_conteudosite"]);?>">
@@ -90,9 +86,6 @@
 								<h6>Valores </h6>
 								<span class="text"><?php echo ($rs['valores']); ?></span>	
 						</div>
-					<?php 
-						}
-					 ?>
 		</div>
 		<footer>
 			<h2>OnPeças ©</h2>

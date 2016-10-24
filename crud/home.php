@@ -6,7 +6,6 @@
 	if(isset($_GET['oid'])){
 
 		$sql="delete from imagem where oid_imagem=".$_GET['oid'];
-
 		mysql_query($sql);
 
 		echo('<script>
@@ -23,7 +22,7 @@
 			$nome_arq=basename($_FILES['imgSlide']['name']);
 			$uploadfile = $uploaddir . $nome_arq;
 
-			if(strstr($nome_arq,'.jpg') || strstr($nome_arq,'.png')  || strstr($nome_arq,'.jpeg') || strstr($nome_arq,'.gif')) {
+			if(strstr($nome_arq,'.jpg') || strstr($nome_arq,'.png')  || strstr($nome_arq,'.jpeg')) {
 				if(move_uploaded_file($_FILES['imgSlide']["tmp_name"],$uploadfile)) {
 
 					
@@ -61,7 +60,7 @@
 
 			}else{
 
-				if(strstr($nome_arq,'.jpg') || strstr($nome_arq,'.png')  || strstr($nome_arq,'.jpeg') || strstr($nome_arq,'.gif')) {
+				if(strstr($nome_arq,'.jpg') || strstr($nome_arq,'.png')  || strstr($nome_arq,'.jpeg')) {
 				if(move_uploaded_file($_FILES['imgSlide']["tmp_name"],$uploadfile)) {
 
 				

@@ -55,12 +55,12 @@
 			<?php require_once('standard/menu.php'); ?>
 			<div class="caixaCadastro">
 				<h4>Cadastro de Imagem - Slide</h4>
-					<form action="#" name="" method="post" enctype="multipart/form-data">
-						<label>Título:</label>
+					<form action="" name="" method="post" enctype="multipart/form-data">
+						<label>Título:<span class="obrigatorio">*</span></label>
 							<input type="text" name="txtTitulo" placeholder="Promoção Dia dos Pais" value="<?php echo($titulo); ?>" required>
-						<label>Imagem:</label>
+						<label>Imagem:<span class="obrigatorio">*</span></label>
 							<input type="file" name="imgSlide" onchange="previsualizacao()" <?php if(!isset($_GET['editar'])){ echo("required"); } ?>>
-						<p>Obs: Recomendável inserir imagens com no minímo 1000px.</p>
+						<p>Obs: Escolher imagens com no minímo 1000px.</p>
 						<input type="submit" name="<?php echo($buttonName); ?>" class="buttom" id="salvar" value="Salvar" >
 					</form>
 			</div>
@@ -71,8 +71,7 @@
 
 				<?php
 
-				//
-				$sql="select * from visualizacaoHome";
+				$sql="select * from imagem where classname='TSlideHome'";
 				$select=mysql_query($sql);
 
 				while($imagens=mysql_fetch_array($select)){

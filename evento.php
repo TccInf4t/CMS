@@ -33,7 +33,9 @@
 	<link rel="stylesheet" type="text/css" href="style/stylePadrao.css">
 	<link rel="stylesheet" type="text/css" href="style/styleConteudo.css">
 
-	<script type="text/javascript" src="js/jquery.js"></script> 
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/masks.js"></script> 
+	<script type="text/javascript" src="js/masksInput.js"></script>  
 	<script type="text/javascript" src="js/modal.js"></script>
 
 	<link rel="icon" href="img/favicon.png" type="image/gif"> 
@@ -53,20 +55,20 @@
 			<div class="caixaCadastro">
 				<h4>Cadastro de Eventos</h4>
 					<form name="" action="#" method="post">
-						<label>Nome do Evento:</label>
+						<label>Nome do Evento:<span class="obrigatorio">*</span></label>
 						<input type="text" name="txtTitulo" placeholder="Personalização de carros antigos" value="<?php echo ($titulo);?>">
-						<label>Descrição:</label>
+						<label>Descrição:<span class="obrigatorio">*</span></label>
 						<textarea name="txtDescricao" required="required"><?php echo ($descricao);?></textarea> 
-						<label>Data:</label>
-						<input type="date" name="dtData" required="required" value="<?php echo ($data);?>">
-						<label>Horário:</label>
-						<input type="time" required="required" maxlength="8" name="hrHora" pattern="[0-9]{2}:[0-9]{2} [0-9]{2}$" value="<?php echo ($horario);?>" />
+						<label>Data:<span class="obrigatorio">*</span></label>
+						<input type="date" id="data" name="dtData" required="required" value="<?php echo ($data);?>">
+						<label>Horário:<span class="obrigatorio">*</span></label>
+						<input type="text" id="hora" required="required" maxlength="8" name="hrHora"  value="<?php echo ($horario);?>" />
 						<input type="submit" name="btnSalvar" class="buttom" id="salvar" value="<?php echo ($botao);?>">	
 					</form>
 			</div>
 			<h5>Tabela de Registros - Eventos</h5>
 				<?php 
-					$sql="select * from visualizacaoEvento;";
+					$sql="select * from conteudosite where classname='TEvento';";
 					$select=mysql_query($sql);
 					$cont=0;
 

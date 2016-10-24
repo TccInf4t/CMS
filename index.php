@@ -40,8 +40,9 @@
 				            Exemplo:
 				            </p>
 				            	
+				            <label>Título:<span class="obrigatorio">*</span></label> 
 				            <input type="text" name="txtTitulo" placeholder="Digite o título da da Dica" value="" class="inputAjuda">
-				            <span class="obrigatorio">*</span>
+				           
 				        </div>
 				    </div>
 				   <div class="accordion-section">
@@ -61,7 +62,7 @@
 				        </a>
 				        <div id="accordion-3" class="accordion-section-content">
 				            <p class="text-ajuda">
-				            	Clicar no botão logogff no canto superior direito da página.
+				            	Clicar no botão logoff no canto superior direito da página.
 				            </p>
 				            <h1>Passo 1:</h1>
 				            <img src="img/sair.png" alt="Imagem de como sair do CMS" title="Imagem de como sair do CMS" class="imgAjuda">

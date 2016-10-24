@@ -13,9 +13,7 @@
 			$email=null;
 			$loja=null;
 			$facebook=null;
-			$googleplus=null;
 			$twitter=null;
-			$linkedin=null;
 
 		}else{
 
@@ -27,10 +25,7 @@
 			$email=$rodape['email'];
 			$loja1=$rodape['oid_loja'];
 			$facebook=$rodape['facebook'];
-			$googleplus=$rodape['googleplus'];
 			$twitter=$rodape['twitter'];
-			$linkedin=$rodape['linkedin'];
-
 		}
 
 ?>
@@ -69,9 +64,9 @@
 				<h4>Informações do Rodapé</h4>
 
 					<form name="" action="" method="post">
-						<label>Nome completo da empresa:</label>
+						<label>Nome completo da empresa:<span class="obrigatorio">*</span></label>
 						<input type="text" value="<?php echo($nome); ?>" name="txtNome" placeholder="Onpecas Comércio e Indústria Ltda" required="required">
-						<label>CNPJ:</label>
+						<label>CNPJ:<span class="obrigatorio">*</span></label>
 						<input type="text" name="txtCnpj" value="<?php echo($cnpj); ?>" id="cnpj" placeholder="00.000.000/0000-00" required="required" minlenght="18">
 						<label>Email:</label>
 						<input type="email" name="txtEmail" value="<?php echo($email); ?>" placeholder="onpecas@email.com">
@@ -85,14 +80,10 @@
 							$select=mysql_query($sql);
 
 						?>
-						<select name="cbLoja" >
-
-
+						<select name="cbLoja">
 							<?php
-
 								while($loja=mysql_fetch_array($select)){
-
-									?>
+							?>
 								<option value="<?php echo($loja['oid_conteudosite']); ?>" <?php if($loja['oid_conteudosite'] == $loja1){?> selected<?php } ?>><?php echo($loja['titulo']); ?></option>
 									<?php
 
@@ -102,10 +93,9 @@
 
 						</select>
 						<label>Facebook:</label>
-						<input type="text" name="txtFacebook" value="<?php echo($facebook); ?>" placeholder="https://pt-br.facebook.com/onpecas/
-">
+						<input type="text" name="txtFacebook" value="<?php echo($facebook); ?>" placeholder="facebook.com/onpecas/">
 						<label>Twitter:</label>
-						<input type="text" name="txtTwitter" value="<?php echo($twitter); ?>" placeholder="https://twitter.com/onpecas">
+						<input type="text" name="txtTwitter" value="<?php echo($twitter); ?>" placeholder="twitter.com/onpecas">
 						
 						<input type="submit" name="btnSalvar" class="buttom" id="salvar" value="Salvar">	
 					</form>

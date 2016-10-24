@@ -1,7 +1,10 @@
 /*ESTILIZAÇÃO DO CONTEUDO DO CMS(FORMULARIOS, TABELAS E TITULOS PRATICAMENTE PADRONIZADOS)*/
 
-
-
+.obrigatorio{
+    color:red;
+    font-size: 20px;
+    margin-left: 3px;
+}
 
 .caixaCadastro{
 	width: 650px;height: auto;
@@ -21,7 +24,7 @@
 
 #caixaRegistrosContato{
 	width: 700px;
-	height: 500px;
+	height: 660px;
 	overflow:auto;
 	float: left;
 	display: block;
@@ -56,7 +59,7 @@ h5{
 	clear: both;
 	margin: 0px;
 	margin-top: 20px;
-	margin-bottom:15px;
+	margin-bottom: 10px;
 }
 
 h6{
@@ -282,13 +285,6 @@ tr:nth-child(even){
 	background-position: center;
 }
 
-.opcoesRegistroLoja{
-	width: 20px;height: 20px;border:none;
-	margin: 0 auto;
-	background-position: center;
-	float:left;
-}
-
 #tabelaDetalhes{
 	background-image: url(../icon/iconDetalhes.png);
 }
@@ -346,86 +342,6 @@ ul.tab li a:focus, .active {
     border-top: none;
 }
 
-/**************************ESTILIZAÇÃO ACORDION**********************/
-
-.textAjuda{
-	line-height: 20px;
-	font-size: 17px;
-	color: #333;
-	text-align: justify;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-.accordion, .accordion * {
-    -webkit-box-sizing:border-box; 
-    -moz-box-sizing:border-box; 
-    box-sizing:border-box;
-}
- 
-.accordion {
-    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
-    border-radius:3px;
-    background:#fff;
-    width: 90%;
-    float: left;
-    margin-left: 39px;
-    margin-top: 1px;
-}
-
-
-.accordion-section-title {
-    width:100%;
-    padding:15px;
-    display:inline-block;
-    border-bottom:1px solid #1a1a1a;
-    background-color:#404040;
-    transition:all linear 0.15s;
-    font-size:19px;
-    text-shadow:0px 1px 0px #1a1a1a;
-    color:#fff;
-}
-
-.accordionLoja{
-
-    border-radius:3px;
-    background:#fff;
-    width: 90%;
-    float: left;
-    margin-left: 20px;
-    margin-top: 40px;
-
-}
-
-.accordion-section-title-loja {
-    width:100%;
-    padding:5px;
-    display:inline-block;
-    /*border-bottom:1px solid #1a1a1a;*/
-    background-color:#f2f2f2;
-    transition:all linear 0.15s;
-    font-size:19px;
-    color:#6E6E6E;
-}
-
-.accordion-section-title-loja:hover {
-
-	opacity: 0.7;
-    filter: alpha(opacity=70);
-
-}
-
-.accordion-section-title.active, .accordion-section-title:hover {
-    background:#595959;
-    text-decoration:none;
-}
- 
- 
-.accordion-section-content {
-  
-    display:none;
-}
-
 
 /************************ESTILO MODAL DETALÇHES DO CONTATO***********************/
 
@@ -475,4 +391,75 @@ ul.tab li a:focus, .active {
 	margin-top: 15px;
 	width: 100%;
 	height: 320px;
+}
+
+/*ACCORDION DOS REGISTROS DA LOJA*/
+
+
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+ 
+.accordion {
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+    border:none;
+    background:#fff;
+    width: 90%;
+    float: left;
+    margin-left: 40px;margin-top: 1px;
+}
+ 
+.accordion-section-title {
+    width:100%;
+    padding:10px;
+    display:inline-block;
+   	border:none;
+    background:#595959;
+    font-size:19px;
+    color:#fff;
+}
+ 
+.accordion-section-content {
+    text-align: justify;
+    display:none;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.opcoesRegistroLojas{
+	width: 50px;height: auto;
+	border:none;
+	float: right;
+}
+
+
+/*ESTILIZAÇAO DO RELATORIO DA PAGINA DE ADM-CONTATO*/
+
+.caixaRelatorio{
+	height: auto;width: 95%;
+	border:none;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 30px;
+	box-shadow:1px 1px 2px rgba(0,0,0,0.25);
+	border:solid 1px #ccc;
+}
+
+.barraRelatorio{
+	height: 40px;
+	margin: 0px;
+	margin-top: 25px;
+	margin-bottom: 0px;
+	border:none;
+	display: block;
+}
+
+.porcentagemGrafico{
+	margin-left: 5px;
+	font-size: 18px;
+	color:#5af;
 }

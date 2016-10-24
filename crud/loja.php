@@ -43,7 +43,7 @@
 
 		$enderecoCompleto=$_POST['txtLogradouro'].",".$_POST['txtNumero'].",".$_POST['txtComplemento'].",".$_POST['txtBairro']."-".$_POST['txtCep']."-".$cidade['nome']."-".$estado['nome'];
 
-		$sql="insert into endereco (oid_cidade,logradouro,complemento,numero,cep,bairro,classname,enderecocompleto) values(".$_POST['cbCidade'].",'".$_POST['txtLogradouro']."','".$_POST['txtComplemento']."',".$_POST['txtNumero'].",'".$_POST['txtCep']."','".$_POST['txtBairro']."','tLoja','".$enderecoCompleto."')";
+		$sql="insert into endereco (oid_cidade,logradouro,complemento,numero,cep,bairro,classname,enderecocompleto) values(".$_POST['cbCidade'].",'".$_POST['txtLogradouro']."','".$_POST['txtComplemento']."',".$_POST['txtNumero'].",'".$_POST['txtCep']."','".$_POST['txtBairro']."','TLoja','".$enderecoCompleto."')";
 
 		mysql_query($sql);
 

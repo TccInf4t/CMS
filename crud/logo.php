@@ -16,7 +16,7 @@
 	if(mysql_num_rows($select) == 0){
 
 		
-			if(strstr($nome_arq,'.jpg') || strstr($nome_arq,'.png')  || strstr($nome_arq,'.jpeg') || strstr($nome_arq,'.gif')) {
+			if(strstr($nome_arq,'.jpg') || strstr($nome_arq,'.png')  || strstr($nome_arq,'.jpeg')) {
 				if(move_uploaded_file($_FILES['imgLogo']["tmp_name"],$uploadfile)) {
 
 					
@@ -38,7 +38,7 @@
 
 	}else{
 
-		if(strstr($nome_arq,'.jpg') || strstr($nome_arq,'.png')  || strstr($nome_arq,'.jpeg') || strstr($nome_arq,'.gif')) {
+		if(strstr($nome_arq,'.jpg') || strstr($nome_arq,'.png')  || strstr($nome_arq,'.jpeg')) {
 				if(move_uploaded_file($_FILES['imgLogo']["tmp_name"],$uploadfile)) {
 
 					
